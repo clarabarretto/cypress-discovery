@@ -1,0 +1,52 @@
+{
+    "signup": {
+        "name": "Clara Barretto",
+        "cpf": "00000014141",
+        "email": "cl@hotmail.com",
+        "whatsapp": "11999999999 ",
+        "address": {
+            "cep": "04534011",
+            "street": "Rua Joaquim Floriano", 
+            "number": "1000",
+            "details": "sala full",
+            "district": "Itaim Bibi",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "sun.jpg" 
+    },
+
+    "cpf_inv":{
+        "name": "Clara Barretto",
+        "cpf": "x00000141AA",
+        "email": "joao@hotmail.com",
+        "whatsapp": "11999999999 ",
+        "address": {
+            "cep": "04534011",
+            "street": "Rua Joaquim Floriano", 
+            "number": "1000",
+            "details": "sala full",
+            "district": "Itaim Bibi",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "sun.jpg" 
+    },
+
+    "email_inv": {
+        "name": "João",
+        "cpf": "00000014141",
+        "email": "joao.com.br",
+        "whatsapp": "11999999999 ",
+        "address": {
+            "cep": "04534011",
+            "street": "Rua Joaquim Floriano", 
+            "number": "1000",
+            "details": "sala full",
+            "district": "Itaim Bibi",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "sun.jpg" 
+    }
+}
