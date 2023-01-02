@@ -1,5 +1,4 @@
 class SignupPage {
-   
     go(){
         cy.viewport(1440,900)
         cy.visit('https://buger-eats.vercel.app')
