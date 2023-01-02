@@ -1,6 +1,6 @@
 class SignupPage {
-    go(){
-        cy.viewport(1440,900)
+    go() {
+        cy.viewport(1440, 900)
         cy.visit('https://buger-eats.vercel.app')
 
         cy.get('a[href="/deliver"]').click()
@@ -8,7 +8,7 @@ class SignupPage {
         cy.get('#page-deliver form h1').should('have.text', 'Cadastre-se para  fazer entregas')
     }
 
-    fillForm(deliver){
+    fillForm(deliver) {
         cy.get('input[name="name"]').type(deliver.name)
         cy.get('input[name="cpf"]').type(deliver.cpf)
         cy.get('input[name="email"]').type(deliver.email)
@@ -22,26 +22,22 @@ class SignupPage {
 
         cy.get('input[name="address"]').should('have.value', deliver.address.street)
         cy.get('input[name="district"]').should('have.value', deliver.address.district)
-        cy.get('input[name="city-uf"]').should('have.value', deliver.address.city_state )
+        cy.get('input[name="city-uf"]').should('have.value', deliver.address.city_state)
 
         cy.contains('.delivery-method li', deliver.delivery_method).click()
 
         cy.get('input[accept^="image"]').attachFile('/images/' + deliver.cnh)
     }
 
-    submit(){
+    submit() {
         cy.get('form button[type="submit"]').click()
-
     }
 
-    modalContentShouldBe(expectedMessage){
-        cy.get('.swal2-container .swal2-html-container')
-            .should('have.text', expectedMessage)
+    modalContentShouldBe(expectedMessage) {
+        cy.get('.swal2-container .swal2-html-container').should('have.text', expectedMessage)
     }
 
-    alertMessageShouldBe(expectedMessage){
-        // cy.get('.alert-error').should('have.text', expectedMessage)
-        console.log(expectedMessage);
+    alertMessageShouldBe(expectedMessage) {
         cy.contains('.alert-error', expectedMessage).should('be.visible')
     }
 
